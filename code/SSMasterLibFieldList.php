@@ -12,6 +12,9 @@ class SSMasterLibFieldList extends Extension {
 
 		foreach($this->owner as $f) {
 
+			if($f instanceof TextField || $f instanceof EmailField ) {
+				$f->addPlaceholder($f->Title());
+			}
 
 			if(isset($this->ignores[$f->getName()])) continue;
 

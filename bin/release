@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# exit if we dont have a commit message
+if (( "$#" != 1 ))
+then
+    echo "Usage: ./release {version}"
+	exit 1
+fi
+
+# set current dir
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd $DIR/.. &&
+gulp clean &&
+gulp &&
+
+cd $DIR/.. &&
+git add -A ; \
+git commit -m "commit for release $1" ; \
+git tag -a $1 -m "$1" ; \
+git push ; \
+git push origin $1

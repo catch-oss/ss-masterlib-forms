@@ -5,6 +5,7 @@
 		</li>
 	<% end_loop %>
 </ul>
+
 <div class="tab-content">
 	<% loop Tabs %>
 		<% if Tabs %>
@@ -18,4 +19,3 @@
 		<% end_if %>
 	<% end_loop %>
 </div>
-

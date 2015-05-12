@@ -1,18 +1,19 @@
 <% if $IncludeFormTag %>
-<form $AttributesHTML role="form">
+<form $AttributesHTML data-validate>
 <% end_if %>
+
 	<% if $Message %>
 		<% if $MessageType == "good" %>
 			<div id="{$FormName}_error" class="alert alert-success">$Message</div>
 		<% else_if MessageType == "info" %>
-			<div id="{$FormName}_error" class="alert alert-info">$Message</div>	
+			<div id="{$FormName}_error" class="alert alert-info">$Message</div>
 		<% else_if MessageType == "bad" %>
-			<div id="{$FormName}_error" class="alert alert-error">$Message</div>	
+			<div id="{$FormName}_error" class="alert alert-error">$Message</div>
 		<% end_if %>
 	<% end_if %>
-	
+
 	<fieldset>
-		<% if $Legend %><legend>$Legend</legend><% end_if %> 
+		<% if $Legend %><legend>$Legend</legend><% end_if %>
 		<% loop $Fields %>
 			$FieldHolder
 		<% end_loop %>
