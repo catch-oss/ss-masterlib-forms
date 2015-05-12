@@ -1,0 +1,34 @@
+name: SSMasterLibForm
+---
+SSMasterLibForm:
+  inline_fields:
+    - CheckboxField
+    - FormAction
+FormField:
+  extensions:
+    - SSMasterLibFormField
+TextField:
+  extensions:
+    - SSMasterLibTextField
+OptionsetField:
+  extensions:
+    - SSMasterLibOptionsetField
+FormAction:
+  extensions:
+    - SSMasterLibFormAction
+TextareaField:
+  extensions:
+    - SSMasterLibTextField
+FieldList:
+  extensions:
+    - SSMasterLibFieldList
+Injector:
+  MemberLoginForm:
+    class: SSMasterLibMemberLoginForm
+---
+only:
+  moduleexists: userforms
+---
+UserDefinedForm_Controller:
+  extensions:
+    - SSMasterLibUserForm
