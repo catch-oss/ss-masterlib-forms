@@ -12,7 +12,7 @@ class SSMasterLibFieldList extends Extension {
 
 		foreach($this->owner as $f) {
 
-			if($f instanceof TextField || $f instanceof EmailField ) {
+			if($f instanceof TextField || $f instanceof EmailField  || $f instanceof PasswordField ) {
 				$f->addPlaceholder($f->Title());
 			}
 
