@@ -13,16 +13,17 @@ class SSMasterLibFieldList extends Extension {
 		foreach($this->owner as $f) {
 			if (is_object($f)) {
 
-				if($f instanceof TextField || $f instanceof EmailField  || $f instanceof PasswordField ) {
+				if($f instanceof TextField || $f instanceof EmailField  || $f instanceof PasswordField || $f instanceof TextareaField) {
 					$f->addPlaceholder($f->Title());
 				}
 
 				if(isset($this->ignores[$f->getName()])) continue;
 
-				// if ($f instanceof SelectionGroup_Item) {
-				// 	$f->addExtraClass('radio');
+				if ($f instanceof SelectionGroup) {
+					$f->addLabelClass('radio');
+					// $f->addExtraClass('radio');
 				// 	//die(print_r($f->getAttributes(),1));
-				// }
+				}
 
 				if($f instanceof CompositeField) {
 					$f->getChildren()->SSMasterLibify();
