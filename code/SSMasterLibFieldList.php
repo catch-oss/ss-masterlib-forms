@@ -21,11 +21,14 @@ class SSMasterLibFieldList extends Extension {
 
 				if ($f instanceof SelectionGroup) {
 					$f->addLabelClass('radio');
-					// $f->addExtraClass('radio');
-				// 	//die(print_r($f->getAttributes(),1));
 				}
 
 				if($f instanceof CompositeField) {
+					if ($f instanceof FieldGroup) {
+						$template = "SSMasterLib{$f->class}_holder";
+						$this->setFieldHolderTemplate($template,$f);
+						$this->setTemplate($f);
+					}
 					$f->getChildren()->SSMasterLibify();
 					continue;
 				}
@@ -40,32 +43,39 @@ class SSMasterLibFieldList extends Extension {
 				}
 
 				$template = "SSMasterLib{$f->class}_holder";
-				if(SSViewer::hasTemplate($template)) {
-					$f->setFieldHolderTemplate($template);
-				}
-				else {
-					$f->setFieldHolderTemplate("SSMasterLibFieldHolder");
-				}
+				$this->setFieldHolderTemplate($template,$f);
 
-				foreach(array_reverse(ClassInfo::ancestry($f)) as $className) {
-					$SSMasterLibCandidate = "SSMasterLib{$className}";
-					$nativeCandidate = $className;
-					if(SSViewer::hasTemplate($SSMasterLibCandidate)) {
-						$f->setTemplate($SSMasterLibCandidate);
-						break;
-					}
-					elseif(SSViewer::hasTemplate($nativeCandidate)) {
-						$f->setTemplate($nativeCandidate);
-						break;
-					}
-
-
-				}
+				$this->setTemplate($f);
 			}
 		}
 
 		return $this->owner;
 
+	}
+
+
+	public function setFieldHolderTemplate($template,$formField) {
+		if(SSViewer::hasTemplate($template)) {
+			return $formField->setFieldHolderTemplate($template);
+		}
+		else {
+			return $formField->setFieldHolderTemplate("SSMasterLibFieldHolder");
+		}
+	}
+
+	public function setTemplate($formField) {
+		foreach(array_reverse(ClassInfo::ancestry($formField)) as $className) {
+			$SSMasterLibCandidate = "SSMasterLib{$className}";
+			$nativeCandidate = $className;
+			if(SSViewer::hasTemplate($SSMasterLibCandidate)) {
+				return $formField->setTemplate($SSMasterLibCandidate);
+				break;
+			}
+			elseif(SSViewer::hasTemplate($nativeCandidate)) {
+				$formField->setTemplate($nativeCandidate);
+				break;
+			}
+		}
 	}
 
 

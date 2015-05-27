@@ -12,13 +12,13 @@
 		<% end_if %>
 	<% end_if %>
 
-	<fieldset>
+	<div class="form-fieldset">
 		<% if $Legend %><legend>$Legend</legend><% end_if %>
 		<% loop $Fields %>
 			$FieldHolder
 		<% end_loop %>
 		<div class="clear"><!-- --></div>
-	</fieldset>
+	</div>
 
 	<% if $Actions %>
 	<div class="form-actions">

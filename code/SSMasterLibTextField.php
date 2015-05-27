@@ -23,7 +23,6 @@ class SSMasterLibTextField extends SSMasterLibFormField {
 	}
 
 
-
 	/**
 	 * Adds text immediately to the right, abut the form field
 	 *

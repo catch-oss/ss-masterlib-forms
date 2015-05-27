@@ -16,9 +16,6 @@ OptionsetField:
 FormAction:
   extensions:
     - SSMasterLibFormAction
-TextareaField:
-  extensions:
-    - SSMasterLibTextField
 FieldList:
   extensions:
     - SSMasterLibFieldList
