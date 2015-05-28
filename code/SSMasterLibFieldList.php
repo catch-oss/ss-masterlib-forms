@@ -38,6 +38,8 @@ class SSMasterLibFieldList extends Extension {
 					$f->setAttribute('data-placeholder', 'Please select one');
 				}
 
+
+
 				if(!in_array($f->class, $inline_fields )) {
 					$f->addExtraClass('form-control');
 				}

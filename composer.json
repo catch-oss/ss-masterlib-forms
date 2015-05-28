@@ -13,7 +13,8 @@
     "require":
     {
         "silverstripe/framework": "3.1.*@stable",
-	    "silverstripe/cms": "3.1.*@stable"
+	    "silverstripe/cms": "3.1.*@stable",
+        "studiobonito/silverstripe-spamprotection-honeypot" : "1.0.*@stable"
     },
     "replace": {"silverstripe/ssmasterlib-forms": "*"}
 
