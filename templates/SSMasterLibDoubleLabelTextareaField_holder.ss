@@ -1,10 +1,11 @@
 <div id="$Name" class="<% if $AppendedText || $PrependedText %>input-group<% end_if %> $HolderClasses" $HolderAttributes>
-    <label for="$ID">$Label2</label>
-    <label class="sublabel" for="$ID">$Label1</label>
+
+    <label for="$ID">$Label1</label>
+    <label class="sublabel" for="$ID">$Label2</label>
+    
     <% if $PrependedText %>
         <span class="input-group-addon">$PrependedText</span>
     <% end_if %>
-
 
     $Field
 
@@ -13,9 +14,10 @@
     <% end_if %>
 
     <% if HelpText %>
-    <p class="help-block">$HelpText</p>
+        <p class="help-block">$HelpText</p>
     <% end_if %>
+
     <% if InlineHelpText %>
-    <span class="help-inline">$InlineHelpText</span>
+        <span class="help-inline">$InlineHelpText</span>
     <% end_if %>
 </div>
