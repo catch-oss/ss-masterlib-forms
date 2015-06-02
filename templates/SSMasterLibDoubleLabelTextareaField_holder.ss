@@ -1,8 +1,8 @@
 <div id="$Name" class="<% if $AppendedText || $PrependedText %>input-group<% end_if %> $HolderClasses" $HolderAttributes>
 
-    <label for="$ID">$Label1</label>
-    <label class="sublabel" for="$ID">$Label2</label>
-    
+    <label class="label-1" for="$ID">$Label1</label>
+    <label class="label-2 sublabel" for="$ID">$Label2</label>
+
     <% if $PrependedText %>
         <span class="input-group-addon">$PrependedText</span>
     <% end_if %>
