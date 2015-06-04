@@ -5,7 +5,7 @@
                 <% loop $Options %>
                     <div class="checkbox <% if $Up.Inline %>inline<% end_if %>">
                         <input id="$ID" class="checkbox" name="$Name" type="checkbox" value="$Value"<% if $isChecked %> checked="checked"<% end_if %><% if $isDisabled %> disabled="disabled"<% end_if %>>
-                        <label for="$ID">$Title</label>
+                        <label for="$ID" class="checkbox icon-check2">$Title</label>
                     </div>
                     <% if $Up.HasColumns && $MultipleOf($Up.PerColumn) %></div><div class="$Up.ColumnClasses"><% end_if %>
                 <% end_loop %>
@@ -15,7 +15,7 @@
             <% loop $Options %>
                 <div class="checkbox <% if $Up.Inline %>inline<% end_if %>">
                     <input id="$ID" class="checkbox" name="$Name" type="checkbox" value="$Value"<% if $isChecked %> checked="checked"<% end_if %><% if $isDisabled %> disabled="disabled"<% end_if %>>
-                    <label for="$ID">$Title</label>
+                    <label for="$ID" class="checkbox icon-check2">$Title</label>
                 </div>
             <% end_loop %>
         <% end_if %>
