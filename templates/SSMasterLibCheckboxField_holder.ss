@@ -1,4 +1,4 @@
-<div id="$Name" class="checkbox $HolderClasses" $HolderAttributes>
+<div id="$Name" class="$HolderClasses" $HolderAttributes>
     <input $AttributesHTML class="$inputClasses">
     <label for="$ID" class="$labelClasses checkbox icon-check2">$Title</label>
     <% if $HelpText %>
