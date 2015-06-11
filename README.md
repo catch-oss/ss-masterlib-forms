@@ -1,7 +1,7 @@
 silverstripe-ssmasterlib-forms
 ============================
 
-Allows the creation of forms compatible with the Twitter SSMasterLib CSS framework in SilverStripe 3.
+Allows the creation of forms compatible with the SSMasterLib CSS framework in SilverStripe 3.
 
 ## Basic Usage
 Just use the "SSMasterLibForm" subclass instead of Form.
