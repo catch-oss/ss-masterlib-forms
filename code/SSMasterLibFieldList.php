@@ -29,13 +29,14 @@ class SSMasterLibFieldList extends Extension {
                         $this->setFieldHolderTemplate($template,$f);
                         $this->setTemplate($f);
                     }
+                    // echo (get_class($f));
                     $f->getChildren()->SSMasterLibify();
                     continue;
                 }
 
                 if ($f instanceof DropdownField) {
                     $f->addExtraClass('catch-dropdown');
-                    if (!$f->getAttribute('data-placeholder'))
+                    if (!$f->getAttribute('data-placeholder') && $f->getStyle() != 'noplaceholder')
                         $f->setAttribute('data-placeholder', 'Please select one');
                 }
 
@@ -44,7 +45,11 @@ class SSMasterLibFieldList extends Extension {
                 }
 
                 $template = "SSMasterLib{$f->class}_holder";
-                $this->setFieldHolderTemplate($template,$f);
+                $this->setFieldHolderTemplate($template, $f);
+                $this->setSmallFieldHolderTemplate($template . '_small', $f);
+
+                // if ($f instanceof TextField)
+                //     die($f->getFieldHolderTemplate());
 
                 $this->setTemplate($f);
             }
@@ -55,12 +60,21 @@ class SSMasterLibFieldList extends Extension {
     }
 
 
-    public function setFieldHolderTemplate($template,$formField) {
+    public function setFieldHolderTemplate($template, $formField) {
         if(SSViewer::hasTemplate($template)) {
             return $formField->setFieldHolderTemplate($template);
         }
         else {
             return $formField->setFieldHolderTemplate("SSMasterLibFieldHolder");
+        }
+    }
+
+    public function setSmallFieldHolderTemplate($template, $formField) {
+        if(SSViewer::hasTemplate($template)) {
+            return $formField->setSmallFieldHolderTemplate($template);
+        }
+        else {
+            return $formField->setSmallFieldHolderTemplate("SSMasterLibSmallFieldHolder");
         }
     }
 

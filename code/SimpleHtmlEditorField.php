@@ -1,12 +1,6 @@
 <?php
 
-/**
- * Defines a formfield that has HTML editing capability
- * using the TinyMCE plugin
- *
- * @author Uncle Cheese <unclecheese@leftandmain.com>
- * @package ssmasterlib_forms
- */
+
 class SimpleHtmlEditorField extends TextareaField {
 
 

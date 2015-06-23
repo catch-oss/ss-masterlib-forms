@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Creates a {@link TextField} or a subclass thereof that is compatible with the
- * Twitter SSMasterLib CSS framework.
- *
- * @author Uncle Cheese <unclecheese@leftandmain.com>
- * @package ssmasterlib_forms
- */
 class SSMasterLibTextField extends SSMasterLibFormField {
 
 

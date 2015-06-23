@@ -1,12 +1,5 @@
 <?php
 
-/**
- * The base class for creating a {@link FormField} object
- * that is compatible with the Twitter SSMasterLib CSS framework.
- *
- * @author Uncle Cheese <unclecheese@leftandmain.com>
- * @package ssmasterlib_forms
- */
 class SSMasterLibFormField extends DataExtension {
 
 

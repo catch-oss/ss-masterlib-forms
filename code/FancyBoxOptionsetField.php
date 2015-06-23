@@ -1,6 +1,9 @@
 <?php
 
-class DivlessOptionsetField extends OptionsetField {
+class FancyBoxOptionsetField extends OptionsetField {
+
+	protected $Subtitle;
+	protected $Subparagraph;
 
 	/**
 	 * An array of column_name => span_length pairs.
@@ -24,6 +27,21 @@ class DivlessOptionsetField extends OptionsetField {
 	 */
 	protected $numberOfColumns;
 
+	public function setSubtitle($sub) {
+        $this->Subtitle = $sub;
+    }
+
+	public function getSubtitle() {
+        return $this->Subtitle;
+    }
+
+	public function setSubparagraph($paraStr) {
+        $this->Subparagraph = $paraStr;
+    }
+
+	public function getSubparagraph() {
+        return $this->Subparagraph;
+    }
 
 	/**
 	 * Enable or disable "inline" presentation, in which

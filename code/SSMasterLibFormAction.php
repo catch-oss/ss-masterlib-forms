@@ -29,7 +29,7 @@ class SSMasterLibFormAction extends DataExtension {
 
 
 
-	/** 
+	/**
 	 * Sets the size of the button. Options include:
 	 * 	- "large"
 	 *  - "small"

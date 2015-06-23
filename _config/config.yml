@@ -10,6 +10,9 @@ FormField:
 TextField:
   extensions:
     - SSMasterLibTextField
+DropdownField:
+  extensions:
+    - SSMasterLibDropdownField
 OptionsetField:
   extensions:
     - SSMasterLibOptionsetField

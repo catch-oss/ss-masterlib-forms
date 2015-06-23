@@ -1,15 +1,5 @@
 <?php
 
-/**
- * Builds a form that renders {@link FormField} objects
- * using templates that are compatible with Twitter SSMasterLib.
- * Extra methods are decorated on to the {@link SSMasterLibFormField}
- * objects and their subclasses to support special features
- * of the framework.
- *
- * @author Uncle Cheese <unclecheese@leftandmain.com>
- * @package boostrap_forms
- */
 class SSMasterLibForm extends Form {
 
 
@@ -127,7 +117,7 @@ class SSMasterLibForm extends Form {
 		}
 		$this->addExtraClass("form-{$this->formLayout}");
 
-		$this->applySSMasterLib();		
+		$this->applySSMasterLib();
 
 		return parent::forTemplate();
 	}

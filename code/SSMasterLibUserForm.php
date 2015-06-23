@@ -1,10 +1,6 @@
 <?php
 
-
-
 class SSMasterLibUserForm extends Extension {
-
-
 
 	public function updateForm($form) {
 		$form->Fields()->ssmasterlibify();

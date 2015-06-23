@@ -1,13 +1,5 @@
 <?php
 
-
-/**
- * Creates a {@link OptionsetField} or a subclass thereof that is compatible with the
- * Twitter SSMasterLib CSS framework.
- *
- * @author Uncle Cheese <unclecheese@leftandmain.com>
- * @package ssmasterlib_forms
- */
 class SSMasterLibOptionsetField extends SSMasterLibFormField {
 
 	/**
@@ -23,7 +15,7 @@ class SSMasterLibOptionsetField extends SSMasterLibFormField {
 	 * </code>
 	 * @var array
 	 */
-	protected $columnCounts = array ();	
+	protected $columnCounts = array ();
 
 
 	/**
@@ -50,7 +42,7 @@ class SSMasterLibOptionsetField extends SSMasterLibFormField {
 	 * Sets the column layout for the options
 	 * @param array $cols An array of column_name => span_length pairs
 	 * @see  $columnCounts
-	 * 
+	 *
 	 * @return   OptionsetField
 	 */
 	public function setColumns($cols) {
@@ -114,7 +106,7 @@ class SSMasterLibOptionsetField extends SSMasterLibFormField {
 	 *
 	 * @return  int
 	 */
-	public function PerColumn() {		
+	public function PerColumn() {
 		return ceil(count($this->owner->getSource())/$this->numberOfColumns);
 	}
 

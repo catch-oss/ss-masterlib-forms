@@ -1,15 +1,8 @@
 <?php
 
-/**
- * Defines a FormField that uses the Chosen JS plugin for making
- * dropdown fields nice.
- *
- * @author Uncle Cheese <unclecheese@leftandmain.com>
- * @package ssmasterlib_forms
- */
 class ChosenDropdownField extends DropdownField {
 
-	
+
 
 	/**
 	 * @var int The number of items that need to appear in the dropdown
@@ -26,7 +19,7 @@ class ChosenDropdownField extends DropdownField {
 	 * @return ChosenDropdownField
 	 */
 	public function setSearchThreshold($num) {
-		return $this->setAttribute('data-search-threshold', $num);		
+		return $this->setAttribute('data-search-threshold', $num);
 	}
 
 
