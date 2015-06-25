@@ -7,6 +7,9 @@ SSMasterLibForm:
 FormField:
   extensions:
     - SSMasterLibFormField
+FileField:
+  extensions:
+    - SSMasterLibFileField
 TextField:
   extensions:
     - SSMasterLibTextField
