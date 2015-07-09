@@ -1,5 +1,9 @@
-<label class="label-1" for="$ID">$Label1</label>
-<label class="label-2 sublabel" for="$ID">$Label2</label>
+<% if $Label1 %>
+    <label class="label-1" for="$ID">$Label1</label>
+<% end_if %>
+<% if $Label2 %>
+    <label class="label-2 sublabel" for="$ID">$Label2</label>
+<% end_if %>
 <select $AttributesHTML
         data-validate-errors-container="#errors-$ID">
     <% loop $Options %>
