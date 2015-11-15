@@ -1,5 +1,5 @@
 {
-    "name": "2degrees/ssmasterlib-forms",
+    "name": "catch/ssmasterlib-forms",
     "description": "Allows you to create forms in SilverStripe that are compatible with the 2DM MasterLib.",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "master library", "forms"],
