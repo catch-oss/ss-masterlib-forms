@@ -12,9 +12,9 @@
     ],
     "require":
     {
-        "silverstripe/framework": "3.1.*@stable",
-	    "silverstripe/cms": "3.1.*@stable",
-        "studiobonito/silverstripe-spamprotection-honeypot" : "1.0.*@stable"
+        "silverstripe/framework": "3.*@stable",
+	    "silverstripe/cms": "3.*@stable",
+        "studiobonito/silverstripe-spamprotection-honeypot" : "1.*@stable"
     },
     "replace": {"2degrees/ssmasterlib-forms": "*"}
 
