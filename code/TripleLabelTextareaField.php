@@ -1,6 +1,6 @@
 <?php
 
-class DoubleLabelTextareaField extends TextareaField {
+class TripleLabelTextareaField extends TextareaField {
     protected $label1;
     protected $label2;
 
