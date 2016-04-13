@@ -12,10 +12,10 @@
         <span class="input-group-addon">$AppendedText</span>
     <% end_if %>
     <% if HelpText %>
-    <p class="help-block">$HelpText</p>
+    <p class="help-block help-text">$HelpText</p>
     <% end_if %>
     <% if InlineHelpText %>
-    <span class="help-inline">$InlineHelpText</span>
+    <span class="help-inline help-text">$InlineHelpText</span>
     <% end_if %>
     <% if $Description %>
         <span class="description help-text">$Description</span>
