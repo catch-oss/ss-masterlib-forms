@@ -13,6 +13,8 @@ class SSMasterLibFieldList extends Extension {
         foreach($this->owner as $f) {
             if (is_object($f)) {
 
+                $f->setAttribute('data-validate-errors-container', '#' . $f->ID() . '-errors-container');
+
                 if($f instanceof TextField || $f instanceof EmailField  || $f instanceof PasswordField || $f instanceof TextareaField) {
                     $f->addPlaceholder($f->Title());
                 }

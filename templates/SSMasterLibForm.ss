@@ -1,7 +1,6 @@
 <% if $IncludeFormTag %>
 <form $AttributesHTML data-validate>
 <% end_if %>
-
 	<% if $Message %>
 		<% if $MessageType == "good" %>
 			<div id="{$FormName}_error" class="alert alert-success">$Message</div>
@@ -11,7 +10,6 @@
 			<div id="{$FormName}_error" class="alert alert-error">$Message</div>
 		<% end_if %>
 	<% end_if %>
-
 	<div class="form-fieldset">
 		<% if $Legend %><legend>$Legend</legend><% end_if %>
 		<% loop $Fields %>
@@ -19,7 +17,6 @@
 		<% end_loop %>
 		<div class="clear"><!-- --></div>
 	</div>
-
 	<% if $Actions %>
 	<div class="form-actions">
 		<% loop $Actions %>

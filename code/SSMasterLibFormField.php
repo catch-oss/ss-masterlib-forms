@@ -168,7 +168,7 @@ class SSMasterLibFormField extends DataExtension {
 	private function loadErrorMessage() {
 		if($this->owner->message) {
 			$this->addHolderClass("error");
-			$this->addHelpText($this->owner->message);
+			// $this->addHelpText($this->owner->message);
 		}
 	}
 

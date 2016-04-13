@@ -3,6 +3,14 @@
 		$Field
 	</div>
 	<% if $RightTitle %><label class="right" for="$ID">$RightTitle</label><% end_if %>
-	<% if $Message %><span class="message $MessageType">$Message</span><% end_if %>
-	<% if $Description %><span class="description">$Description</span><% end_if %>
+	<% if $Description %>
+        <span class="description help-text">$Description</span>
+    <% end_if %>
+	<div id="$ID-errors-container">
+        <% if $Message %>
+            <ul class="error-list filled">
+                <li class="">$Message</li>
+            </ul>
+        <% end_if %>
+    </div>
 </div>
