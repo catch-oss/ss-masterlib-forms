@@ -28,9 +28,6 @@ FieldList:
 Injector:
   MemberLoginForm:
     class: SSMasterLibMemberLoginForm
-# EmailField:
-#   extensions:
-#     - SSMasterLibEmailField
 ---
 only:
   moduleexists: userforms
