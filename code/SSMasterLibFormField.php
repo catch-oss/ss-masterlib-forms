@@ -155,7 +155,6 @@ class SSMasterLibFormField extends DataExtension {
 	 */
 	public function HolderClasses() {
 		$this->loadErrorMessage();
-
 		return implode(" ",$this->holderClasses);
 	}
 

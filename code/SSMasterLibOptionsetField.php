@@ -24,6 +24,27 @@ class SSMasterLibOptionsetField extends SSMasterLibFormField {
 	 */
 	protected $numberOfColumns;
 
+	/**
+	 * Adds classes to the individual option inputs
+	 *
+	 * @param boolean $bool
+	 * @return SSMasterLibOptionsetField
+	 */
+	public function setOptionClasses($classes = null) {
+		$this->owner->OptionClasses = $classes;
+		return $this->owner;
+	}
+
+	/**
+	 * Adds extra attributes to the individual options
+	 *
+	 * @param boolean $bool
+	 * @return SSMasterLibOptionsetField
+	 */
+	public function setOptionAttrs($attrs = null) {
+		$this->owner->OptionAttrs = $attrs;
+		return $this->owner;
+	}
 
 	/**
 	 * Enable or disable "inline" presentation, in which
