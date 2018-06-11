@@ -36,7 +36,8 @@ class SSMasterLibSecurity extends Security {
             ';
 
             $contentForms .= '
-                <div id="' . $form->FormName() . '-panel"
+                <div
+                    id="' . $form->FormName() . '-panel"
                     aria-labelledby="' . $form->FormName() . '-tab"
                     role="tabpanel"
                     aria-hidden="' . ($i == 0 ? 'false' : 'true') . '">
