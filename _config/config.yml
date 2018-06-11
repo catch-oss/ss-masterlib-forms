@@ -28,6 +28,8 @@ FieldList:
 Injector:
   MemberLoginForm:
     class: SSMasterLibMemberLoginForm
+  Security:
+    class: SSMasterLibSecurity
 ---
 only:
   moduleexists: userforms
