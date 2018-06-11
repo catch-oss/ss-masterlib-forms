@@ -59,8 +59,9 @@ class SSMasterLibSecurity extends Security {
 
         return '
             <div id="Form_EditForm" class="c-small-tabs">
-                ' . $content . $contentForms . '
+                ' . $content  . '
             </div>
-        ';
+            ' . $contentForms
+        ;
     }
 }
