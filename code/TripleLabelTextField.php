@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use TextField;
+
+
 class TripleLabelTextField extends TextField {
     protected $label1;
     protected $label2;

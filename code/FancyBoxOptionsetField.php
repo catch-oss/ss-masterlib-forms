@@ -1,5 +1,11 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use OptionsetField;
+use Exception;
+
+
 class FancyBoxOptionsetField extends OptionsetField {
 
 	protected $Subtitle;

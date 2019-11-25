@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use Exception;
+
+
 class SSMasterLibOptionsetField extends SSMasterLibFormField {
 
 	/**

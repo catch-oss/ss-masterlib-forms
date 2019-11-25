@@ -1,5 +1,23 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use Extension;
+use Config;
+use TextField;
+use EmailField;
+use PasswordField;
+use TextareaField;
+use SelectionGroup;
+use CompositeField;
+use FieldGroup;
+use DropdownField;
+use SSViewer;
+use ClassInfo;
+use CatchDesign\SSMasterLibForms\SSMasterLibForm;
+
+
+
 
 class SSMasterLibFieldList extends Extension {
 
@@ -8,7 +26,7 @@ class SSMasterLibFieldList extends Extension {
 
 
     public function SSMasterLibify() {
-        $inline_fields = Config::inst()->get('SSMasterLibForm','inline_fields');
+        $inline_fields = Config::inst()->get(SSMasterLibForm::class,'inline_fields');
 
         foreach($this->owner as $f) {
             if (is_object($f)) {

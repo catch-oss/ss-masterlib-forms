@@ -1,5 +1,14 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use FormField;
+use ArrayList;
+use ArrayData;
+use Requirements;
+
+
+
 
 class SSMasterLibButtonGroupField extends FormField
 {
@@ -43,7 +52,7 @@ class SSMasterLibButtonGroupField extends FormField
 	public function Field($attributes = array ())
 	{
 		Requirements::javascript(SSMasterLib_FORMS_DIR."/javascript/SSMasterLib_forms.js");
-		return $this->renderWith('SSMasterLibButtonGroupField');
+		return $this->renderWith(SSMasterLibButtonGroupField::class);
 	}
 
 

@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+
+
+
 class SSMasterLibTextField extends SSMasterLibFormField {
 
 

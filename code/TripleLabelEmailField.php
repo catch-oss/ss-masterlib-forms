@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use EmailField;
+
+
 class TripleLabelEmailField extends EmailField {
     protected $label1;
     protected $label2;

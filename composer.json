@@ -1,7 +1,7 @@
 {
     "name": "catch/ssmasterlib-forms",
     "description": "Allows you to create forms in SilverStripe that are compatible with the 2DM MasterLib.",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
     "keywords": ["silverstripe", "master library", "forms"],
 	"license": "BSD-3-Clause",
     "authors": [
@@ -12,10 +12,17 @@
     ],
     "require":
     {
-        "silverstripe/framework": "3.*@stable",
-	    "silverstripe/cms": "3.*@stable",
+        "silverstripe/framework": "^4.3",
+        "silverstripe/cms": "^4.3",
+        "silverstripe/vendor-plugin": "^1",
         "studiobonito/silverstripe-spamprotection-honeypot" : "1.*@stable"
     },
-    "replace": {"2degrees/ssmasterlib-forms": "*"}
-
+    "replace": {
+        "2degrees/ssmasterlib-forms": "*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CatchDesign\\SSMasterLibForms\\": "code/"
+        }
+    }
 }

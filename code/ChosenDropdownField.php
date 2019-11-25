@@ -1,5 +1,11 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use DropdownField;
+use Requirements;
+
+
 class ChosenDropdownField extends DropdownField {
 
 

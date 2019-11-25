@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use TextField;
+
+
 class DoubleLabelTextField extends TextField {
 
 	protected $label1;

@@ -1,0 +1,24 @@
+mappings:
+  SSMasterLibFileField: CatchDesign\SSMasterLibForms\SSMasterLibFileField
+  TripleLabelEmailField: CatchDesign\SSMasterLibForms\TripleLabelEmailField
+  SSMasterLibFieldList: CatchDesign\SSMasterLibForms\SSMasterLibFieldList
+  ChosenDropdownField: CatchDesign\SSMasterLibForms\ChosenDropdownField
+  SSMasterLibForm: CatchDesign\SSMasterLibForms\SSMasterLibForm
+  SSMasterLibFormAction: CatchDesign\SSMasterLibForms\SSMasterLibFormAction
+  SSMasterLibSecurity: CatchDesign\SSMasterLibForms\SSMasterLibSecurity
+  DoubleLabelTextField: CatchDesign\SSMasterLibForms\DoubleLabelTextField
+  SSMasterLibFormField: CatchDesign\SSMasterLibForms\SSMasterLibFormField
+  TripleLabelTextField: CatchDesign\SSMasterLibForms\TripleLabelTextField
+  SSMasterLibButtonGroupField: CatchDesign\SSMasterLibForms\SSMasterLibButtonGroupField
+  DoubleLabelDropdownField: CatchDesign\SSMasterLibForms\DoubleLabelDropdownField
+  ChosenListboxField: CatchDesign\SSMasterLibForms\ChosenListboxField
+  SimpleHtmlEditorField: CatchDesign\SSMasterLibForms\SimpleHtmlEditorField
+  SSMasterLibDropdownField: CatchDesign\SSMasterLibForms\SSMasterLibDropdownField
+  SSMasterLibTextField: CatchDesign\SSMasterLibForms\SSMasterLibTextField
+  SSMasterLibUserForm: CatchDesign\SSMasterLibForms\SSMasterLibUserForm
+  SSMasterLibOptionsetField: CatchDesign\SSMasterLibForms\SSMasterLibOptionsetField
+  DivlessOptionsetField: CatchDesign\SSMasterLibForms\DivlessOptionsetField
+  FancyBoxOptionsetField: CatchDesign\SSMasterLibForms\FancyBoxOptionsetField
+  SSMasterLibHoneypotField: CatchDesign\SSMasterLibForms\SSMasterLibHoneypotField
+  TripleLabelTextareaField: CatchDesign\SSMasterLibForms\TripleLabelTextareaField
+  SSMasterLibMemberLoginForm: CatchDesign\SSMasterLibForms\SSMasterLibMemberLoginForm

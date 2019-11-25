@@ -1,5 +1,11 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use ListboxField;
+use Requirements;
+
+
 class ChosenListboxField extends ListboxField {
 	/**
 	 * @var int The number of items that need to appear in the dropdown

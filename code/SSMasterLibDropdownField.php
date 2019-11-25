@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use DataExtension;
+
+
 class SSMasterLibDropdownField extends DataExtension {
 
 	protected $style;

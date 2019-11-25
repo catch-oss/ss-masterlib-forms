@@ -1,6 +1,11 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+
 use StudioBonito\SilverStripe\SpamProtection\Honeypot\FormField\HoneypotField;
+use FormField;
+
 
 class SSMasterLibHoneypotField extends HoneypotField
 {

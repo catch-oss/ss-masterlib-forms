@@ -1,5 +1,13 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use MemberLoginForm;
+use Controller;
+use CatchDesign\SSMasterLibForms\SSMasterLibForm;
+
+
+
 class SSMasterLibMemberLoginForm extends MemberLoginForm {
 
 
@@ -9,7 +17,7 @@ class SSMasterLibMemberLoginForm extends MemberLoginForm {
 		parent::__construct($controller, $name, $fields, $actions, $checkCurrentUser);
 		$this->Fields()->ssmasterlibify();
 		$this->Actions()->ssmasterlibify();
-		$this->setTemplate("SSMasterLibForm");
+		$this->setTemplate(SSMasterLibForm::class);
 
 		$this->invokeWithExtensions('updateBoostrapMemberLoginForm', $this);
 	}

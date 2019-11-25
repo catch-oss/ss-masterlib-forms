@@ -1,5 +1,11 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use TextareaField;
+use Requirements;
+
+
 
 class SimpleHtmlEditorField extends TextareaField {
 

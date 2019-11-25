@@ -1,5 +1,11 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use DataExtension;
+use Convert;
+
+
 class SSMasterLibFormField extends DataExtension {
 
 

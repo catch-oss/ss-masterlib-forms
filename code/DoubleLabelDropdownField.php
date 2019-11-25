@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use DropdownField;
+
+
 class DoubleLabelDropdownField extends DropdownField {
     protected $label1;
     protected $label2;

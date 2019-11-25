@@ -1,5 +1,10 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use DataExtension;
+
+
 /**
  * Creates a {@link FormAction} object that is compatible
  * with the Twitter SSMasterLib CSS framework.

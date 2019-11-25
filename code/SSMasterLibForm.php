@@ -1,5 +1,13 @@
 <?php
 
+namespace CatchDesign\SSMasterLibForms;
+
+use Form;
+use Config;
+use Requirements;
+
+
+
 class SSMasterLibForm extends Form {
 
 
@@ -8,7 +16,7 @@ class SSMasterLibForm extends Form {
 	/**
 	 * @var string The template that will render this form
 	 */
-	protected $template = "SSMasterLibForm";
+	protected $template = SSMasterLibForm::class;
 
 
 
@@ -28,7 +36,7 @@ class SSMasterLibForm extends Form {
 	 * @param bool $bool
 	 */
 	public static function set_ssmasterlib_included($bool = true) {
-		Config::inst()->update("SSMasterLibForm", "ssmasterlib_included", $bool);
+		Config::inst()->update(SSMasterLibForm::class, "ssmasterlib_included", $bool);
 	}
 
 
@@ -41,7 +49,7 @@ class SSMasterLibForm extends Form {
 	 * @param bool $bool
 	 */
 	public static function set_jquery_included($bool = true) {
-		Config::inst()->update("SSMasterLibForm", "jquery_included", $bool);
+		Config::inst()->update(SSMasterLibForm::class, "jquery_included", $bool);
 	}
 
 
@@ -52,7 +60,7 @@ class SSMasterLibForm extends Form {
 	 * @param bool $bool
 	 */
 	public static function set_ssmasterlib_form_included($bool = true) {
-		Config::inst()->update("SSMasterLibForm", "ssmasterlib_form_included", $bool);
+		Config::inst()->update(SSMasterLibForm::class, "ssmasterlib_form_included", $bool);
 	}
 
 
