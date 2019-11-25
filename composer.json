@@ -10,6 +10,12 @@
             "email": "aaron@catch.co.nz"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/catchnz/silverstripe-spamprotection-honeypot.git"
+        }
+    ],
     "require":
     {
         "silverstripe/framework": "^4.3",
