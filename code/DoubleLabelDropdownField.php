@@ -24,6 +24,4 @@ class DoubleLabelDropdownField extends DropdownField {
     public function getLabel2() {
         return $this->label2;
     }
-
-
 }
