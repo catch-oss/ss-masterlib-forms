@@ -2,6 +2,7 @@
     "name": "catch/ssmasterlib-forms",
     "description": "Allows you to create forms in SilverStripe that are compatible with the 2DM MasterLib.",
     "type": "silverstripe-vendormodule",
+    "version": "1.0.2",
     "keywords": ["silverstripe", "master library", "forms"],
 	"license": "BSD-3-Clause",
     "authors": [
@@ -10,18 +11,12 @@
             "email": "aaron@catch.co.nz"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/catchnz/silverstripe-spamprotection-honeypot.git"
-        }
-    ],
     "require":
     {
         "silverstripe/framework": "^4.3",
         "silverstripe/cms": "^4.3",
         "silverstripe/vendor-plugin": "^1",
-        "studiobonito/silverstripe-spamprotection-honeypot" : "~2"
+        "studiobonito/silverstripe-spamprotection-honeypot" : "*"
     },
     "replace": {
         "2degrees/ssmasterlib-forms": "*"
