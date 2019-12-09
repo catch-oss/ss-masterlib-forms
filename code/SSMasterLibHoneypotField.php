@@ -2,10 +2,8 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-
 use StudioBonito\SilverStripe\SpamProtection\Honeypot\FormField\HoneypotField;
-use FormField;
-
+use SilverStripe\Forms\FormField;
 
 class SSMasterLibHoneypotField extends HoneypotField
 {

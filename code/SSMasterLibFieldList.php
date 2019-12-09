@@ -2,22 +2,19 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use Extension;
-use Config;
-use TextField;
-use EmailField;
-use PasswordField;
-use TextareaField;
-use SelectionGroup;
-use CompositeField;
-use FieldGroup;
-use DropdownField;
-use SSViewer;
-use ClassInfo;
 use CatchDesign\SSMasterLibForms\SSMasterLibForm;
-
-
-
+use SilverStripe\Core\Config\Config;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\EmailField;
+use SilverStripe\Forms\PasswordField;
+use SilverStripe\Forms\TextareaField;
+use SilverStripe\Forms\SelectionGroup;
+use SilverStripe\Forms\CompositeField;
+use SilverStripe\Forms\FieldGroup;
+use SilverStripe\Forms\DropdownField;
+use SilverStripe\View\SSViewer;
+use SilverStripe\Core\ClassInfo;
+use SilverStripe\Core\Extension;
 
 class SSMasterLibFieldList extends Extension {
 
@@ -74,11 +71,8 @@ class SSMasterLibFieldList extends Extension {
                 $this->setTemplate($f);
             }
         }
-
         return $this->owner;
-
     }
-
 
     public function setFieldHolderTemplate($template, $formField) {
         if(SSViewer::hasTemplate($template)) {
@@ -112,8 +106,6 @@ class SSMasterLibFieldList extends Extension {
             }
         }
     }
-
-
 
     public function SSMasterLibIgnore($field) {
         $this->ignores[$field] = true;

@@ -2,7 +2,9 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use TextField;
+
+use SilverStripe\Forms\TextField;
+
 
 
 class DoubleLabelTextField extends TextField {

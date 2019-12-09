@@ -2,9 +2,6 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-
-
-
 class SSMasterLibFileField extends SSMasterLibFormField {
 
 	/**

@@ -25,5 +25,11 @@
         "psr-4": {
             "CatchDesign\\SSMasterLibForms\\": "code/"
         }
+    },
+    "extra": {
+        "expose": [
+            "css",
+            "javascript"
+        ]
     }
 }

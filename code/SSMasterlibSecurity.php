@@ -2,8 +2,7 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use Security;
-
+use SilverStripe\Security\Security;
 
 class SSMasterLibSecurity extends Security {
 

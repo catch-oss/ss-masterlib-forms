@@ -2,8 +2,7 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-
-
+use CatchDesign\SSMasterLibForms\SSMasterLibFormField;
 
 class SSMasterLibTextField extends SSMasterLibFormField {
 

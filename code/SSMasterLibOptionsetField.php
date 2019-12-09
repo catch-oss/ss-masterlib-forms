@@ -3,7 +3,7 @@
 namespace CatchDesign\SSMasterLibForms;
 
 use Exception;
-
+use CatchDesign\SSMasterLibForms\SSMasterLibFormField;
 
 class SSMasterLibOptionsetField extends SSMasterLibFormField {
 

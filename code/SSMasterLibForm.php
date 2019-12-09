@@ -2,32 +2,22 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use Form;
-use Config;
-use Requirements;
-
-
+use SilverStripe\Core\Config\Config;
+use SilverStripe\View\Requirements;
+use SilverStripe\Forms\Form;
 
 class SSMasterLibForm extends Form {
-
-
-
 
 	/**
 	 * @var string The template that will render this form
 	 */
 	protected $template = SSMasterLibForm::class;
 
-
-
 	/**
 	 * @var string The layout of the form.
 	 * @see SSMasterLibForm::setLayout()
 	 */
 	protected $formLayout = "vertical";
-
-
-
 
 	/**
 	 * Sets form to disable/enable inclusion of SSMasterLib CSS
@@ -39,9 +29,6 @@ class SSMasterLibForm extends Form {
 		Config::inst()->update(SSMasterLibForm::class, "ssmasterlib_included", $bool);
 	}
 
-
-
-
 	/**
 	 * Sets form to disable/enable inclusion of jQuery
 	 *
@@ -52,7 +39,6 @@ class SSMasterLibForm extends Form {
 		Config::inst()->update(SSMasterLibForm::class, "jquery_included", $bool);
 	}
 
-
 	/**
 	 * Sets form to disable/enable inclusion of ssmasterlib forms js
 	 *
@@ -62,7 +48,6 @@ class SSMasterLibForm extends Form {
 	public static function set_ssmasterlib_form_included($bool = true) {
 		Config::inst()->update(SSMasterLibForm::class, "ssmasterlib_form_included", $bool);
 	}
-
 
 	/**
 	 * Applies the SSMasterLib transformation to the fields and actiosn
@@ -76,7 +61,6 @@ class SSMasterLibForm extends Form {
 
 		return $this;
 	}
-
 
 	/**
 	 * Sets the desired layout of the form. Options include:
@@ -94,8 +78,6 @@ class SSMasterLibForm extends Form {
 		return $this;
 	}
 
-
-
 	/**
 	 * Adds a "well," or sunken background and border, to the form
 	 *
@@ -104,8 +86,6 @@ class SSMasterLibForm extends Form {
 	public function addWell() {
 		return $this->addExtraClass("well");
 	}
-
-
 
 	/**
 	 * Includes the dependency if necessary, applies the SSMasterLib templates,
@@ -129,8 +109,4 @@ class SSMasterLibForm extends Form {
 
 		return parent::forTemplate();
 	}
-
-
-
-
 }

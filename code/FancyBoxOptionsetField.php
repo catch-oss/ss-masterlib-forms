@@ -2,8 +2,10 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use OptionsetField;
+
 use Exception;
+use SilverStripe\Forms\OptionsetField;
+
 
 
 class FancyBoxOptionsetField extends OptionsetField {

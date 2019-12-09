@@ -2,8 +2,7 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use TextareaField;
-
+use SilverStripe\Forms\TextareaField;
 
 class TripleLabelTextareaField extends TextareaField {
     protected $label1;

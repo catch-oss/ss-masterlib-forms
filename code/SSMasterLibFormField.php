@@ -2,9 +2,8 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use DataExtension;
-use Convert;
-
+use SilverStripe\Core\Convert;
+use SilverStripe\ORM\DataExtension;
 
 class SSMasterLibFormField extends DataExtension {
 

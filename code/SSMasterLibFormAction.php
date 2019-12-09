@@ -2,8 +2,8 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use DataExtension;
 
+use SilverStripe\ORM\DataExtension;
 
 /**
  * Creates a {@link FormAction} object that is compatible

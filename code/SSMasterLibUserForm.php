@@ -2,10 +2,9 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use Extension;
+
 use CatchDesign\SSMasterLibForms\SSMasterLibForm;
-
-
+use SilverStripe\Core\Extension;
 
 class SSMasterLibUserForm extends Extension {
 
@@ -14,5 +13,4 @@ class SSMasterLibUserForm extends Extension {
 		$form->Actions()->ssmasterlibify();
 		$form->setTemplate(SSMasterLibForm::class);
 	}
-
 }

@@ -2,8 +2,11 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use DropdownField;
-use Requirements;
+
+
+use SilverStripe\View\Requirements;
+use SilverStripe\Forms\DropdownField;
+
 
 
 class ChosenDropdownField extends DropdownField {

@@ -2,8 +2,7 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use EmailField;
-
+use SilverStripe\Forms\EmailField;
 
 class TripleLabelEmailField extends EmailField {
     protected $label1;

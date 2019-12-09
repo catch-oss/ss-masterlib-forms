@@ -2,7 +2,9 @@
 
 namespace CatchDesign\SSMasterLibForms;
 
-use DataExtension;
+
+use SilverStripe\ORM\DataExtension;
+
 
 
 class SSMasterLibDropdownField extends DataExtension {
