@@ -1,39 +1,39 @@
 name: SSMasterLibForm
 ---
-SSMasterLibForm:
+CatchDesign\SSMasterLibForms\SMasterLibForm:
   inline_fields:
     - CheckboxField
     - FormAction
-FormField:
+SilverStripe\Forms\FormField:
   extensions:
-    - SSMasterLibFormField
-FileField:
+    - CatchDesign\SSMasterLibForms\SSMasterLibFormField
+SilverStripe\Forms\FileField:
   extensions:
-    - SSMasterLibFileField
-TextField:
+    - CatchDesign\SSMasterLibForms\SSMasterLibFileField
+SilverStripe\Forms\TextField:
   extensions:
-    - SSMasterLibTextField
-DropdownField:
+    - CatchDesign\SSMasterLibForms\SSMasterLibTextField
+SilverStripe\Forms\DropdownField:
   extensions:
-    - SSMasterLibDropdownField
-OptionsetField:
+    - CatchDesign\SSMasterLibForms\SSMasterLibDropdownField
+SilverStripe\Forms\OptionsetField:
   extensions:
-    - SSMasterLibOptionsetField
-FormAction:
+    - CatchDesign\SSMasterLibForms\SSMasterLibOptionsetField
+SilverStripe\Forms\FormAction:
   extensions:
-    - SSMasterLibFormAction
-FieldList:
+    - CatchDesign\SSMasterLibForms\SSMasterLibFormAction
+SilverStripe\Forms\FieldList:
   extensions:
-    - SSMasterLibFieldList
+    - CatchDesign\SSMasterLibForms\SSMasterLibFieldList
 Injector:
-  MemberLoginForm:
-    class: SSMasterLibMemberLoginForm
-  Security:
-    class: SSMasterLibSecurity
+  SilverStripe\Security\MemberAuthenticator\MemberLoginForm:
+    class: CatchDesign\SSMasterLibForms\SSMasterLibMemberLoginForm
+  SilverStripe\Security\Security:
+    class: CatchDesign\SSMasterLibForms\SSMasterLibSecurity
 ---
 only:
   moduleexists: userforms
 ---
 UserDefinedForm_Controller:
   extensions:
-    - SSMasterLibUserForm
+    - CatchDesign\SSMasterLibForms\SSMasterLibUserForm
