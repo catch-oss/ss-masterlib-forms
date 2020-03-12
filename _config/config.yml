@@ -1,4 +1,8 @@
-name: SSMasterLibForm
+---
+Name: ssmasterlib-forms
+After:
+  - "#framework"
+  - "#cms"
 ---
 CatchDesign\SSMasterLibForms\SMasterLibForm:
   inline_fields:
