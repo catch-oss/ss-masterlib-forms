@@ -95,13 +95,13 @@ class SSMasterLibForm extends Form {
 	 */
 	public function forTemplate() {
 		if(!$this->stat('ssmasterlib_included')) {
-			Requirements::css(SSMASTERLIB_FORMS_DIR.'/css/ssmasterlib.css');
+			// Requirements::css(SSMASTERLIB_FORMS_DIR.'/css/ssmasterlib.css');
 		}
 		if(!$this->stat('jquery_included')) {
-			Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.js");
+            Requirements::javascript('silverstripe/admin:thirdparty/jquery/jquery.js');
 		}
 		if(!$this->stat('ssmasterlib_form_included')) {
-			Requirements::javascript(SSMASTERLIB_FORMS_DIR."/javascript/ssmasterlib_forms.js");
+			// Requirements::javascript(SSMASTERLIB_FORMS_DIR."/javascript/ssmasterlib_forms.js");
 		}
 		$this->addExtraClass("form-{$this->formLayout}");
 

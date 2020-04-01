@@ -26,7 +26,10 @@ class SSMasterLibFieldList extends Extension {
         $inline_fields = Config::inst()->get(SSMasterLibForm::class,'inline_fields');
 
         foreach($this->owner as $f) {
+            $field_class = ClassInfo::shortName($f);
+
             if (is_object($f)) {
+
 
                 $f->setAttribute('data-validate-errors-container', '#' . $f->ID() . '-errors-container');
 
@@ -42,7 +45,7 @@ class SSMasterLibFieldList extends Extension {
 
                 if($f instanceof CompositeField) {
                     if ($f instanceof FieldGroup) {
-                        $template = "SSMasterLib{$f->class}_holder";
+                        $template = "SSMasterLib{$field_class}_holder";
                         $this->setFieldHolderTemplate($template,$f);
                         $this->setTemplate($f);
                     }
@@ -57,11 +60,11 @@ class SSMasterLibFieldList extends Extension {
                         $f->setAttribute('data-placeholder', 'Please select one');
                 }
 
-                if(!in_array($f->class, $inline_fields )) {
+                if(!in_array($field_class, $inline_fields )) {
                     $f->addExtraClass('form-control');
                 }
 
-                $template = "SSMasterLib{$f->class}_holder";
+                $template = "SSMasterLib{$field_class}_holder";
                 $this->setFieldHolderTemplate($template, $f);
                 $this->setSmallFieldHolderTemplate($template . '_small', $f);
 

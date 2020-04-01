@@ -1,7 +1,7 @@
 <div id="$Name" class="$HolderClasses" $HolderAttributes>
     <input $AttributesHTML class="$inputClasses">
     <% if $Title %>
-        <label for="$ID" class="$labelClasses checkbox icon-tick">$Title</label>
+        <label for="$ID" class="$labelClasses checkbox icon-tick">$Title.RAW</label>
     <% end_if %>
     <% if $HelpText %>
         <p class="help-block help-text">$HelpText</p>
