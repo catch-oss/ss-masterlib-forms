@@ -11,12 +11,16 @@
             "email": "aaron@catch.co.nz"
         }
     ],
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/azt3k/silverstripe-honeypot.git"
+    }],
     "require":
     {
         "silverstripe/framework": "^4.3",
         "silverstripe/cms": "^4.3",
         "silverstripe/vendor-plugin": "^1",
-        "studiobonito/silverstripe-spamprotection-honeypot" : "*"
+        "heyday/silverstripe-honeypot": "dev-master"
     },
     "replace": {
         "2degrees/ssmasterlib-forms": "*"
